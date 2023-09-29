@@ -1,0 +1,8 @@
+public class Solution {
+    public IList<IList<int>> FindDifference(int[] nums1, int[] nums2) {
+        return new List<IList<int> >{
+                  nums1.Except(nums2).Distinct().ToList(),
+                  nums2.Except(nums1).Distinct().ToList()
+            };
+    }
+}
